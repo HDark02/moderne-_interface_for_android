@@ -1,0 +1,134 @@
+MDScreen:
+    name: "login_page"
+	MDFloatLayout:
+    	md_bg_color : 0, 0, .8, .9
+		MDLabel:
+    		id: welcome_text
+			text: "Welcome to"
+			theme_text_color: "Custom"
+			text_color: "white"
+			font_size: "30sp"
+			# font_style: "H3"
+			size_hint: .9, .1
+			pos_hint: {"x": .08, "top": 1}
+			halign: "left"
+			bold: True
+		MDLabel:
+        	id: welcome_text1
+			text: "Alpha Service"
+			theme_text_color: "Custom"
+			text_color: "white"
+			opacity: .8
+			font_style: "H5"
+			size_hint: .9, .1
+			pos_hint: {"x": .08, "top": .95}
+			halign: "left"
+			bold: True
+		MDLabel:
+            id: signin_to_continue
+			text: "Sign in to continue"
+			theme_text_color: "Custom"
+			text_color: "white"
+			opacity: .4
+			font_size: "20sp"
+			size_hint: .9, .1
+			pos_hint: {"x": .08, "top": .88}
+			halign: "left"
+		
+		Input_cart:
+    		hint_text: "Email"
+    		pos_hint:  {"center_x": .5, "top": .7}
+    	Input_cart:
+    		hint_text: "Password"
+    		pos_hint:  {"center_x": .5, "top": .6}
+		MDRoundFlatButton:
+    		id: login_in_text
+			text: "Sign in"
+			pos_hint: {"center_x": .5, "center_y": .45}
+			halign: "center"
+			font_size: "20sp"
+			bold: True
+			size_hint: .8, .07
+			theme_text_color: "Custom"
+			text_color: "white"
+			md_bg_color: .2, .8, .1, .6
+			on_release: 
+		MDLabel:
+        	text: "OR"
+			theme_text_color: "Custom"
+			text_color: "white"
+			opacity: .45
+			font_style: "H5"
+			pos_hint: {"center_x": .5, "center_y": .37}
+			halign: "center"
+			bold: True
+		MDRoundFlatButton:
+    		id: sign_up_text
+			text: "Login with Meta"
+			pos_hint: {"center_x": .5, "center_y": .3}
+			halign: "center"
+			font_size: "20sp"
+			bold: True
+			size_hint: .8, .07
+			theme_text_color: "Custom"
+			text_color: 0, 0, .7, .8
+			md_bg_color: "white"
+			on_release:
+		MDIconButton:
+    	    icon: "facebook"
+			halign: "center"
+			md_bg_color: "white"
+			theme_text_color: "Custom"
+			halign: "left"
+			md_bg_color: "white"
+			text_color: "blue"
+			pos_hint: {"x": .15, "center_y": .3}
+
+		MDTextButton:
+            text: "New user?"
+			theme_text_color: "Custom"
+			text_color: "white"
+			pos_hint: {"right": .5, "center_y": .15}
+			halign: "center"
+			halign: "right"
+			opacity: .55
+			font_size: "20sp"
+			on_release: app.sign_in()
+		MDTextButton:
+    		text: "Create Account"
+			theme_text_color: "Custom"
+			text_color: "white"
+			underline: True
+			pos_hint: {"x": .55, "center_y": .15}
+			halign: "left"
+			opacity: 1.8
+			font_size: "20sp"
+			on_release: app.sign_in()
+		MDTextButton:
+            text: "By tapping Continue, Create Accound or Login\nYou agree to Alpha servide Terms of Service and Privacy Policy"
+			theme_text_color: "Custom"
+			text_color: "white"
+			pos_hint: {"center_x": .5, "center_y": .05}
+			halign: "center"
+			opacity: .55
+			font_size: "10sp"
+			on_release: app.sign_in()
+<Input_cart@MDTextField>:
+    id: ""
+    pos_y: .1
+	hint_text: ""
+	size_hint: .8, None
+	height: self.minimum_height
+	padding: 18
+	hint_text_color_normal:  "white"
+	hint_text_color_focus: "white"
+	password: False
+	theme_text_color: "Custom"
+	cursor_color: "black"
+	background_color: "white"
+	hint_text_color: "white"
+	pos_hint: {"center_x": .5, "center_y": root.pos_y}
+	multiline: False
+	font_size: "20sp"
+	text_color: "white"
+	text_color_normal: "white"
