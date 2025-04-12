@@ -1,18 +1,5 @@
 ---
 
-```markdown
-# 🔐 Login & Sign-up App with KivyMD
-
-This is a simple **Login and Sign-up screen** app built using [KivyMD](https://kivymd.readthedocs.io/en/latest/). It demonstrates the use of multiple screens (`ScreenManager`), screen transitions, and basic navigation logic.
-
-## 📱 Preview
-
-<img src="preview.png" alt="App Preview" width="300"/>
-
-> 📝 *Replace `preview.png` with your actual image file or image URL.*
-
----
-
 ## 🚀 Features
 
 - ✅ Modern Material Design UI
