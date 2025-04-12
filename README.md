@@ -80,9 +80,12 @@ pip install kivymd==1.1.1
 ## 📬 Contact
 
 Feel free to reach out if you have questions or want to contribute!
-Telegram: t.me\Thekingdynamo
-WhatsApp: +22897606374
+Telegram: https://t.me/Thekingdynamo
+WhatsApp: https://wa.me/+22897606374
 Facebook: https://www.facebook.com/alexdynamo.dynamo/
+Instagram: https://www.instagram.com/thekingdynamo/
+beacons: https://beacons.page/thekingdynamo
+
 ---
 
 ```
