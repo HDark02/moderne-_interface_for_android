@@ -5,7 +5,6 @@ from kivy.lang import Builder
 from kivy.core.window import Window
 from kivymd.uix.screenmanager import ScreenManager
 
-Window.size = (398, 804)
 
 class tex(MDApp):
     #création de l'interface
